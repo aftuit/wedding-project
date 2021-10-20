@@ -1,24 +1,23 @@
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import MainPage from './pages/MainPage';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import MainPage from './pages/MainPage'
 
 function App() {
-
-  const routes = [
-    {
-      path: "/",
-      component: MainPage
-    }
-  ]
-
-  return (
-    <BrowserRouter >
-      <Switch>
+    const routes = [
         {
-          routes.map(route => <Route key={route.path} path={route.path} component={route.component} exact />)
-        }
-      </Switch>
-    </BrowserRouter>
-  );
+            path: '/',
+            component: MainPage,
+        },
+    ]
+
+    return (
+        <BrowserRouter>
+            <Switch>
+                {routes.map(route => (
+                    <Route key={route.path} path={route.path} component={route.component} exact />
+                ))}
+            </Switch>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App
