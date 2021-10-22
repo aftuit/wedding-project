@@ -61,7 +61,7 @@ const AsalOyi = () => {
                                     width='100%'
                                     height='100%'
                                 />
-                                <div className='position-absolute hover-text w-100'>
+                                <div className='position-absolute hover-text w-100 text-center'>
                                     <div className='w-100 my-xl-2 my-lg-2 my-md-1 text h-100 ml-3'>
                                         <h5 className='fs-xl-18 fs-18 p-medium'>{info.name}</h5>
                                         <p className='fs-xl-15 p-regular'>
