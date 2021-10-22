@@ -1,5 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import MainPage from './pages/MainPage'
+import Footer from './components/Footer/Footer'
+import './App.scss'
 
 function App() {
     const routes = [
@@ -11,11 +13,19 @@ function App() {
 
     return (
         <BrowserRouter>
-            <Switch>
-                {routes.map(route => (
-                    <Route key={route.path} path={route.path} component={route.component} exact />
-                ))}
-            </Switch>
+            <div>
+                <Switch>
+                    {routes.map(route => (
+                        <Route
+                            key={route.path}
+                            path={route.path}
+                            component={route.component}
+                            exact
+                        />
+                    ))}
+                </Switch>
+                <Footer />
+            </div>
         </BrowserRouter>
     )
 }

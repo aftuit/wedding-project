@@ -1,9 +1,11 @@
-import React from 'react';
+import React from 'react'
+import AsalOyi from '../components/AsalOyi/AsalOyi'
 
 const MainPage = () => {
     return (
-        <div>
+        <div className='montserrat'>
             MainPage
+            <AsalOyi />
         </div>
     );
 };
