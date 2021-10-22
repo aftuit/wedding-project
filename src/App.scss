@@ -406,6 +406,10 @@ a {
     box-shadow: $hover-btn-shadow !important;
 }
 
+.hover-btn-shadow-hover:hover {
+    box-shadow: 1px 3px 20px 2px #d9b76a !important;
+}
+
 // border
 .borr-20 {
     border-radius: $fs-20 !important;
