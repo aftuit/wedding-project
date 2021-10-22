@@ -53,7 +53,7 @@ const AsalOyi = () => {
                             className='my-xl-3 my-lg-3 my-md-2 my-sm-2 my-2 px-md-2 px-sm-2'
                             key={info.id}
                         >
-                            <Card className='position-relative overflow-hidden borr-20 border-0 h-100'>
+                            <Card className='position-relative overflow-hidden borr-20 border-0 h-100 text-center'>
                                 <CardImg
                                     src={info.img_url}
                                     alt='image24'
@@ -68,7 +68,7 @@ const AsalOyi = () => {
                                             {info.ticket_num} kishilik bilet
                                         </p>
                                         <div>
-                                            <Button className='fs-xl-18 fs-18 borr-12 bg-white border-0 c-black hover-btn-shadow'>
+                                            <Button className='fs-xl-18 fs-18 borr-12 bg-white border-0 c-black hover-btn-shadow hover-btn-shadow-hover'>
                                                 Ko'rish
                                             </Button>
                                         </div>
@@ -80,7 +80,9 @@ const AsalOyi = () => {
                 </Row>
                 <Row>
                     <Col md='12' className='text-center py-3'>
-                        <Button className='border-0 borr-12 bg-white c-black p-medium hover-btn-shadow'>Ko'rib chiqish</Button>
+                        <Button className='border-0 borr-12 bg-white c-black p-medium hover-btn-shadow'>
+                            Ko'rib chiqish
+                        </Button>
                     </Col>
                 </Row>
             </Container>
