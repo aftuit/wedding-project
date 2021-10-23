@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutUs from '../components/AboutUs/AboutUs';
 import AsalOyi from '../components/AsalOyi/AsalOyi'
 
 const MainPage = () => {
@@ -6,6 +7,7 @@ const MainPage = () => {
         <div className='montserrat'>
             MainPage
             <AsalOyi />
+            <AboutUs />
         </div>
     );
 };

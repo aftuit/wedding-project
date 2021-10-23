@@ -49,6 +49,10 @@
     @include mask('./svg/telegram.svg')
 }
 
+.right {
+    @include mask('./svg/right.svg')
+}
+
 // color
 $main-color: #ff416c;
 $c-7c7a7a: #7c7a7a;
@@ -75,6 +79,8 @@ $c-fff6f2: #fff6f2;
 $c-e4e4e4: #e4e4e4;
 $c-b0adad: #b0adad;
 $c-f3f1f1: #f3f1f1;
+$c-8c8e90: #8c8e90;
+$c-878787: #878787;
 $c-42424261: #42424261; // rgba(66, 66, 66, .38)
 $c-black: #000;
 $logo-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.25);
@@ -264,6 +270,14 @@ a {
     color: $c-42424261 !important;
 }
 
+.c-878787 {
+    color: $c-878787 !important;
+}
+
+.c-8c8e90 {
+    color: $c-8c8e90 !important;
+}
+
 .c-black {
     color: $c-black !important;
 }
@@ -373,6 +387,14 @@ a {
     background-color: $c-42424261 !important;
 }
 
+.bgc-878787  {
+    background-color: $c-878787 !important;
+}
+
+.bgc-8c8e90 {
+    background-color: $c-8c8e90 !important;
+}
+
 .bgc-black {
     background-color: $c-black !important;
 }
@@ -425,6 +447,10 @@ a {
 
 .borr-10 {
     border-radius: 10px !important;
+}
+
+.borr-8 {
+    border-radius: 8px !important;
 }
 
 .borr-5 {
