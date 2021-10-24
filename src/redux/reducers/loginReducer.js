@@ -1,7 +1,7 @@
 import { LOGIN } from "../tools/constanta"
 
 const initialState = {
-    isLogin: false
+    isLogin: false,
 }
 
 export const loginReducer = (state = initialState, action) => {

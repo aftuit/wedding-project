@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Button, Card, CardImg, Col, Container, Row } from 'reactstrap'
 import './AsalOyi.scss'
 
 const AsalOyi = () => {
+
     const infos = [
         {
             id: 1,
