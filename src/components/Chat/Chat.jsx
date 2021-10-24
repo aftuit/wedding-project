@@ -47,7 +47,7 @@ const Chat = () => {
                 </div>
 
                 <div className="card-type d-flex" >
-                    <input type="text" className="mx-1" placeholder="type here ... " />
+                    <input type="text" className="mx-1" placeholder="Xabarni kiriting ... " />
                     <button className="mx-1">
                         <span className='icon telegram bgc-4fba6f m-0' />
                     </button>
