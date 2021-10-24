@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import { AboutAccordion } from './AboutAccordion'
 import './AboutUs.scss'
 
 const AboutUs = () => {
+    const [open, setOpen] = useState(1)
+
+    const button = id => {
+        if (id === open) setOpen(0)
+        else setOpen(id)
+    }
+
+    const class1 = 'borr-8 pt-1 p-medium fs-xl-16 ts-5'
     const answers = [
         {
             id: 1,
@@ -21,7 +28,7 @@ const AboutUs = () => {
             answer: 'Boshqatdan harakat qiling.',
         },
         {
-            id: 9,
+            id: 4,
             question: "Men registratsiyadan o'ta olmadim",
             answer: 'Boshqatdan harakat qiling.',
         },
@@ -48,7 +55,8 @@ const AboutUs = () => {
                             <h3 className='fs-xl-32 c-000001'>Bizning maqsad</h3>
                             <p className='open-sans p-regular fs-xl-21 c-8c8e90'>
                                 Maqsadimiz xalqimizga arzon va sifatli xizmat
-                                <br className='d-none d-sm-block' /> ko'rsatish. Kelajak sari rivojlanib borish.
+                                <br className='d-none d-sm-block' /> ko'rsatish. Kelajak sari
+                                rivojlanib borish.
                             </p>
                         </div>
                         <div>
@@ -61,7 +69,57 @@ const AboutUs = () => {
                     </Col>
                     <Col xl='6' lg='6'>
                         {answers.map(answer => (
-                            <AboutAccordion answers={answer} key={answer.id} />
+                            // <AboutAccordion answers={answer} key={answer.id} />
+                            <div
+                                className={`ts-5 borr-10 pt-2 mb-3 ${
+                                    open === answer.id ? 'btn-num-shadow' : ''
+                                }`}
+                                key={answer.id}
+                            >
+                                <div className='d-flex w-100 justify-content-between'>
+                                    <div className='mr-xl-3 mr-2'>
+                                        <div
+                                            className={`${class1} px-2 ${
+                                                open === answer.id ? '' : 'btn-num-shadow'
+                                            }`}
+                                        >
+                                            {answer.id < 10 ? '0' + answer.id : answer.id}
+                                        </div>
+                                    </div>
+                                    <div className='w-100'>
+                                        <p className='fs-xl-18 c-4a4a4a p-medium'>
+                                            {answer.question}
+                                        </p>
+                                    </div>
+                                    <div className='ml-xl-3 ml-2'>
+                                        <div
+                                            className={`${class1} px-1 pb-0 ${
+                                                open === answer.id ? '' : 'btn-num-shadow'
+                                            }`}
+                                            onClick={() => button(answer.id)}
+                                        >
+                                            <span
+                                                className={`icon right bgc-black ts-5 ${
+                                                    open === answer.id ? 'rotate-90' : 'rotate-0'
+                                                }`}
+                                                style={{ height: '16px' }}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    className={`overflow-hidden ts-5 ${
+                                        open === answer.id ? 'h-200' : 'h-0'
+                                    }`}
+                                >
+                                    <div className='d-flex justify-content-between'>
+                                        <div className='mx-xl-3 mx-3 mt-2 pixel bgc-black' />
+                                        <p className='w-100 mr-xl-5 mr-4 fs-xl-14 c-878787 p-medium'>
+                                            {answer.answer}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         ))}
                     </Col>
                 </Row>
