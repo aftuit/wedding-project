@@ -8,12 +8,25 @@
     }
     .card.main{
         z-index: 221;
-        width: 30%;
+        width: 35%;
         position: fixed;
         right: -100%;
         bottom: 5%;
         transition: all 0.4s ease-out;
         box-shadow: 0 0 10px rgb(165, 164, 164);
+        @media(max-width: 800px){
+            width: 50%;
+        }
+        @media(max-width: 580px){
+            width: 60%;
+        }
+        @media(max-width: 475px){
+            width: 80%;
+        }
+        @media(max-width:360px){
+            width: 90%;
+        }
+
 
         &.show-chat{
             right: 3%;
@@ -23,8 +36,8 @@
             position: relative;
             .close-chat{
                 position: absolute;    
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -43,6 +56,11 @@
                 .card-body{
                     padding: 1rem;
                     border-radius: 8px;
+                    p{
+                        @media(max-width: 900px){
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }
