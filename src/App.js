@@ -1,5 +1,7 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import MainPage from './pages/MainPage';
+import Preorder from './pages/Preorder/Preorder'
+import './App.scss'
 
 function App() {
 
@@ -7,6 +9,10 @@ function App() {
     {
       path: "/",
       component: MainPage
+    },
+    {
+      path: "/preorder",
+      component: Preorder
     }
   ]
 
