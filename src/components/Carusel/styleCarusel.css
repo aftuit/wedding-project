@@ -1,0 +1,26 @@
+.BrainhubCarousel__dots .BrainhubCarousel__dot:before {
+    width: 80px;
+    border-radius: 10px;
+    background: white;
+}
+.BrainhubCarousel__dots{
+    position: absolute;
+    color: white;
+    top: 400px;
+    left: 300px;
+}
+.BrainhubCarousel__container{
+    position: absolute;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px ;
+    background-color: black;
+    position: absolute;
+    top: 430px;
+    left: 500px;
+}
+.cards{
+    display: flex;
+}

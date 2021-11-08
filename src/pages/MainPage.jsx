@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from '../components/Navbar/Navbar'
+// import Carusel from '../components/Carusel/Carusel'
 
 const MainPage = () => {
     return (
         <div>
-            MainPage
+           <Navbar />
+            
         </div>
     );
 };
