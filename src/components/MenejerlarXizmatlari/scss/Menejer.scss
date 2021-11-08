@@ -1,0 +1,110 @@
+body{
+    .menejer-xizmatlar{
+        padding: 20px 30px;
+
+        .row{
+            .col-md-6{
+                .img1{
+                    width: 100%;
+                }
+                .batafsil{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 90px 0 0 0;
+                    @media screen and (max-width: 767px) {
+                        justify-content: center;
+                    }
+
+                    .arrow{
+                        font-size: 40px;
+                        margin-top: -10px;
+                    }
+                }
+            }
+
+            .page{
+                border-left: solid 2px rgba(128, 128, 128, 0.342);
+                @media screen and (max-width: 767px) {
+                    text-align: center;
+                }
+
+                hr{
+                    background-color: rgba(128, 128, 128, 0.342);
+                    height: 1px;
+                    margin-top: -2px;
+                }
+            }
+            .row{
+                padding: 15px 0;
+                border-radius: 3px;
+
+                &:hover{
+                    background-color: rgba(181, 206, 253, 0.349);
+                    transition: 0.3s;
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    -ms-transition: 0.3s;
+                    -o-transition: 0.3s;
+                }
+
+                .col-md-8{
+                    .taklifnomalar{
+                        background-color: white;
+                        padding: 3px 10px;
+                        box-shadow: 0 0 3px 2px rgba(128, 128, 128, 0.479);
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                    }
+                    .col-md-3{ 
+                        padding: 0;
+
+                        .batafsil1{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            @media screen and (max-width: 767px) {
+                                justify-content: center;
+                            }
+
+                            .arrow{
+                                font-size: 30px;
+                                margin-top: -4px;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+        
+        .button{
+            padding: 10px 50px;
+            background-color: rgb(253, 188, 46);
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            &:hover{
+                background-color: rgb(255, 174, 0);
+            }
+
+            &:focus{
+                box-shadow: 0 0 5px 4px rgba(139, 0, 139, 0.377);
+            }
+        }
+    }
+}
