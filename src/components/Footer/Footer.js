@@ -1,12 +1,14 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
+import { updateState } from '../../redux/actions/loginAction'
 import './Footer.scss'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <div id='footer' className='bgc-e8f6fd py-xl-5 py-lg-5 py-md-3 py-sm-3 py-3'>
-            <Container>
+            <Container>                   
                 <Row>
                     <Col xl='3' lg='3' md='6' sm='6' className='py-md-3 py-sm-3 py-3'>
                         <div className='h-100'>
@@ -147,5 +149,9 @@ const Footer = () => {
         </div>
     )
 }
-
-export default Footer
+const mapStateToProps = (state) => {
+    return{
+        appear: state.login.appear
+    }
+}
+export default connect(mapStateToProps, {updateState})(Footer)
