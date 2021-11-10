@@ -1,6 +1,8 @@
 .navbar{
     display: flex;
-    position: sticky;
+    position: sticky!important;
+    top: 0;
+    z-index: 32132;
     margin: 0 auto;
     box-shadow:  0px 5px 15px rgb(207, 207, 207);
     

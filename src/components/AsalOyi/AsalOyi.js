@@ -41,8 +41,9 @@ const AsalOyi = () => {
         },
     ]
     return (
-        <div id='asaloyi' className='bgc-f5f9ff py-2'>
+        <div id='asaloyi ' className='mt-5 bgc-f5f9ff py-2'>
             <Container>
+                <h2>Asal Oyi</h2>
                 <Row>
                     {infos.map(info => (
                         <Col

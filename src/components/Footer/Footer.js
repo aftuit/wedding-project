@@ -13,12 +13,12 @@ const Footer = (props) => {
                     <Col xl='3' lg='3' md='6' sm='6' className='py-md-3 py-sm-3 py-3'>
                         <div className='h-100'>
                             <div className='h-xl-100 h-lg-75 h-md-75 h-sm-75'>
-                                <p className='m-auto'>Logo</p>
+                                <img src="/images/logo.png" alt="" className='m-auto w-75'Logo />
                             </div>
                             <div>
                                 <Link
                                     to='/'
-                                    className='btn borr-10 border-color btn-num-shadow c-282323 p-semi-bold fs-xl-16'
+                                    className='btn borr-10 border-color btn-num-shadow c-282323 p-semi-bold fs-xl-16 mt-2'
                                 >
                                     Registratsiyadan o'tish
                                 </Link>
