@@ -1,0 +1,36 @@
+.portfolio{
+    padding: 0 40px 40px 40px;
+    .col-md-5{
+        padding: 0;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+    }
+    button{
+        background-color: rgb(253, 52, 52);
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 100px;
+        box-shadow: 0 2px 5px 3px rgba(128, 128, 128, 0.479);
+        @media screen and (max-width: 365px){
+            padding: 10px 20px;
+        }
+        &:hover{
+            background-color: rgb(255, 36, 36);
+        }
+        &:focus{
+            box-shadow: 0 0 4px 5px rgba(30, 143, 255, 0.438);
+        }
+    }
+    .xarita{
+        padding-top: 40px;
+        p{
+            font-size: 18px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

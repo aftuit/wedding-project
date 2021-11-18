@@ -1,0 +1,26 @@
+.modal-asaloyi{
+    .row{
+        .col-md-10{
+            padding: 0 40px 40px 40px;
+            .row{
+                .col-md-6{
+                    padding: 10px;
+                    .main{
+                        box-shadow: 0 0 3px 2px rgba(128, 128, 128, 0.479);
+                        border-radius: 8px;
+                        -webkit-border-radius: 8px;
+                        -moz-border-radius: 8px;
+                        -ms-border-radius: 8px;
+                        -o-border-radius: 8px;
+                        img{
+                            width: 100%;
+                        }
+                        .text{
+                            padding: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

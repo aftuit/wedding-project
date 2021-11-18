@@ -1,0 +1,12 @@
+.main-best{
+    padding: 50px;
+    .best{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        .best-title{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
